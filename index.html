@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Cyber Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 4px 4px 10px rgba(255, 0, 0, 0.8);
+        }
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8);
+        }
+        .hacker-shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.pixabay.com/photo/2019/06/16/07/49/hacker-4274068_1280.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0.1;
+            animation: moveShadow 5s infinite alternate;
+        }
+        @keyframes moveShadow {
+            from {
+                transform: translateX(-50px);
+                opacity: 0.15;
+            }
+            to {
+                transform: translateX(50px);
+                opacity: 0.25;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hacker-shadow"></div>
+    <h1>DARK CYBER TEAM</h1>
+    <p>Bizi tanımak istiyorsanız, iz bırakmadan hareket eden gölgeleri takip edin.</p>
+    <p>Güvenliğinizi ciddiye alın, çünkü biz izliyoruz...</p>
+</body>
+</html>
